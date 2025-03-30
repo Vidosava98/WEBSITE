@@ -1,3 +1,82 @@
-body{
 
+
+body{
+	font-family: 'MyFont';
+}
+button{
+	font-family: 'MyFont';
+}
+#idTab{
+	background-color: #ffffff;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0.7% 0.7% 0.7% 0.7%; 
+	height: 5%;
+}
+#idMain{
+	background-image: url('Resource/Images/me.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+}
+#idContent{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 10% 5% 0% 5%;
+	color: #ffff;
+    font-size: 30px;
+}
+#idLeftPart{
+	width: 30%;
+}
+#idCv{
+	color: #960606;
+}
+#idLink{
+	color: #960606;
+}
+#idRowItems{
+	display: flex;
+	flex-direction:row;
+	justify-content: space-between;
+}
+#idChat{
+margin-top: 25%;	
+}
+.tab{
+	background-color: #960606;
+	color: #ffff;
+	font-size: 25px;
+	border: none;
+	border-radius: 46%;
+	margin-right: 1%;
+	height: 100%;
+	width: 7.5%;
+}
+.icon{
+	height: 45px;
+	width: 45px;
+	color: #960606;
+}
+.linkContent{
+	display: flex;
+	place-items: self-end;
+}
+.columnItems{
+	display: flex;
+	flex-direction:column;
+}
+.rowItems{
+	display: flex;
+	flex-direction:row;
+}
+@font-face{
+	font-family: 'MyFont';
+	font-weight: normal;
+    font-style: normal; 
+	src: url('Resource/Fonts/Dreambig-axvza.woff2') format('woff2'),
+         url('Resource/Fonts/Dreambig-axvza.woff') format('woff');
 }
