@@ -3,6 +3,7 @@ footer{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	margin-bottom: 2%;
 }
 #idTab{
 	background-color: #0C3934;
@@ -17,7 +18,7 @@ footer{
 #idMain{
 	background-color: #F8EBEE;
 	color: #0C3934; 
-	margin: 0% -1% 0% -1%;
+	margin: 0% -1% -1% -1%;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -73,7 +74,4 @@ footer{
 .columnItems{
 	display: flex;
 	flex-direction:column;
-}
-.linkColor{
-	color: #0C3934;
 }
