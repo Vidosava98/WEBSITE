@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('Resource/Font/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+:root{
+	--primary: #F8EBEE;
+	--bcg: #0C3934;
+}
+body {
+    font-family: 'MyFont';
+}
 footer{
 	margin-top: auto;
 	display: flex;
@@ -6,18 +19,22 @@ footer{
 	margin-bottom: 2%;
 }
 #idTab{
-	background-color: #0C3934;
+	background-color: var(--bcg);
 	color: #ffffff;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-end;
-	height: 10%;
+	align-items: center;
 	margin: -1% -1% 0% -1%;
-	border: 1px solid #0C3934;
+	border: 1px solid var(--bcg);
+	position: sticky;
+	top: 0;
+	z-index: 100000000; 
+	height: 8vh;
 }
 #idMain{
-	background-color: #F8EBEE;
-	color: #0C3934; 
+	background-color: var(--primary);
+	color: var(--bcg); 
 	margin: 0% -1% -1% -1%;
 	min-height: 100vh;
 	display: flex;
@@ -28,21 +45,16 @@ footer{
 #content-2{
 	font-size: 40px;
 }
-#idCenterText{
-	padding: 10% 0vh 0vh 15%;
-	font-size: 30px;
-}
 #idTextFirst{
-	font-size: xx-large;
+	font-size: 40px;
 	font-style: bold;
 }
 #idTextSecond{
-	font-size: large;
+	font-size: 30px;
 	margin-top: -1%;
-	/* padding-left: 15vh; */
 }
 #idTextThird{
-	font-size:medium;
+	font-size:30px;
 	padding-left: 7vh;
 }
 #pictureId{
@@ -50,21 +62,61 @@ footer{
 	height: 180px;
 	border-radius: 50%;
 	margin-left: 7%;
-	/* margin-left: 16%; */
-	border: 2px solid #0C3934;
+	border: 2px solid var(--bcg);
 	object-fit: cover; 
 }
+#techId{
+	margin: 15% 0%  15% 0%;
+	padding-left: 15%;
+}
+#tableId{
+	color: var(--bcg);
+}
+#tableId th{
+	padding: 40px 0px 0px 15%;
+}
+#tableId td{
+	padding: 30px 15px 0px 10%;
+}
+#tableId td{
+	text-align: center;
+}
+#tableId tbody{
+	margin-top: 40px;
+}
 .tab{
-	background-color:#F8EBEE;
-	color: #0C3934;
+	background-color:var(--primary);
+	color: var(--bcg);
 	font-size: 25px;
-	height: 100%;
+	height: 8vh;
 	width: 7.5%;
 	border: none;
+	text-align: center;
+	text-decoration: none;
+}
+.tableTh{
+	background-color: var(--primary);
+	color: var(--bcg);
+	font-family: "MyFont";
+	font-weight: bold;
+	font-size: 20px;
+	border: none;
+}
+.centerText{
+	padding: 10% 0vh 0vh 15%;
+	font-size: 30px;
 }
 .icon{
 	height: 45px;
 	width: 45px;
+}
+.icon2{
+	height: 50px;
+	width: 50px;
+}
+.icon3{
+	height: 80px;
+	width: 80px;
 }
 .linkContent{
 	display: flex;
@@ -74,4 +126,19 @@ footer{
 .columnItems{
 	display: flex;
 	flex-direction:column;
+}
+.fontTitle{
+	font-size: 30px;
+}
+.tab:hover {
+    background-color: var(--primary); 
+    color: var(--bcg); 
+    transform: scale(1); 
+    box-shadow: 0 3px 0px var(--bcg); 
+}
+.tableTh:hover {
+    background-color: var(--primary); 
+    color: var(--bcg); 
+    transform: scale(1); 
+    box-shadow: 0 2px 0px var(--bcg); 
 }
