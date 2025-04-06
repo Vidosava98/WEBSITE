@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 @font-face {
   font-family: "MyFont";
   src: url("Resource/Font/Roboto-VariableFont_wdth,wght.ttf") format("truetype");
@@ -63,6 +66,7 @@ footer {
   margin-left: 7%;
   border: 2px solid var(--bcg);
   object-fit: cover;
+  box-shadow: 0 0 15px var(--bcg);
 }
 #techId {
   margin: 15% 0% 15% 0%;
