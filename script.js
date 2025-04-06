@@ -2,8 +2,8 @@ document.getElementById("tab-1").addEventListener("click", function () {
   showContent(1);
 });
 
-document.getElementById("tab-2").addEventListener("click", function () {
-  showContent(2);
+document.getElementById("tab-5").addEventListener("click", function () {
+  showContent(5);
 });
 document.querySelectorAll(".tableTh").forEach((button, index) => {
   button.addEventListener("click", function () {

@@ -10,6 +10,13 @@
 }
 body {
   font-family: "MyFont";
+  background-color: var(--primary);
+  color: var(--bcg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 footer {
   margin-top: auto;
@@ -22,24 +29,18 @@ footer {
   background-color: var(--bcg);
   color: #ffffff;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  margin: -1% -1% 0% -1%;
-  border: 1px solid var(--bcg);
   position: sticky;
   top: 0;
   z-index: 100000000;
-  height: 8vh;
+  width: 100%;
+  height: 4rem;
+  box-shadow: 0 0 5px black;
+  margin: 0;
+  padding: 0;
 }
-#idMain {
-  background-color: var(--primary);
-  color: var(--bcg);
-  margin: 0% -1% -1% -1%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+
 #content-2 {
   font-size: 40px;
 }
@@ -83,14 +84,14 @@ footer {
   margin-top: 40px;
 }
 .tab {
-  background-color: var(--primary);
-  color: var(--bcg);
-  font-size: 25px;
-  height: 8vh;
-  width: 7.5%;
+  background-color: var(--bcg);
+  color: var(--primary);
+  font-size: 1rem;
   border: none;
   text-align: center;
   text-decoration: none;
+  margin-right: 1.2rem;
+  padding: 1.2rem;
 }
 .tableTh {
   background-color: var(--primary);
