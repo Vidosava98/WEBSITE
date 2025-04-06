@@ -40,8 +40,6 @@ footer {
   display: flex;
   flex-direction: column;
 }
-#content-1 {
-}
 #content-2 {
   font-size: 40px;
 }
