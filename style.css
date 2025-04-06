@@ -24,9 +24,10 @@ body {
 footer {
   margin-top: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   margin-bottom: 2%;
+  align-items: center;
 }
 #idTab {
   background-color: var(--bcg);
@@ -84,13 +85,14 @@ footer {
   font-size: 1.5rem;
   padding: 1.5rem;
   border: none;
+  cursor: pointer;
 }
 .techFieldsRow {
   display: flex;
   flex-direction: row;
 }
 .techFieldsRow div img {
-  margin: 2rem 3rem 0 2rem;
+  margin: 2rem 3rem 0 3rem;
 }
 .techButtonsId {
   display: flex;
@@ -142,6 +144,10 @@ footer {
   display: flex;
   flex-direction: column;
 }
+.rowItems {
+  display: flex;
+  flex-direction: row;
+}
 .fontTitle {
   font-size: 30px;
 }
@@ -149,7 +155,7 @@ footer {
   background-color: var(--primary);
   color: var(--bcg);
   transform: scale(1);
-  box-shadow: 0 3px 0 var(--bcg);
+  box-shadow: 0 3px 0 var(--primary);
 }
 .techButton:hover {
   background-color: var(--primary);

@@ -20,8 +20,10 @@ function showIcons(columnIndex) {
   document.querySelectorAll(".techButton").forEach((button, index) => {
     if (index != columnIndex) {
       button.style.boxShadow = "none";
+      button.style.color = "#15635a";
     } else {
-      button.style.boxShadow = "0 2px 0px #0C3934";
+      button.style.boxShadow = "0 2px 0  #0C3934";
+      button.style.color = "#0C3934";
     }
   });
   const targetRow = rows[columnIndex];
