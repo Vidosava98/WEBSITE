@@ -5,19 +5,19 @@ document.getElementById("tab-1").addEventListener("click", function () {
 document.getElementById("tab-5").addEventListener("click", function () {
   showContent(5);
 });
-document.querySelectorAll(".tableTh").forEach((button, index) => {
+document.querySelectorAll(".techButton").forEach((button, index) => {
   button.addEventListener("click", function () {
     showIcons(index);
   });
 });
 function showIcons(columnIndex) {
-  const rows = document.querySelectorAll("#tableId tbody tr");
+  const rows = document.querySelectorAll("#techId .techFieldsRow");
 
   rows.forEach((row) => {
     row.style.display = "none";
   });
 
-  document.querySelectorAll(".tableTh").forEach((button, index) => {
+  document.querySelectorAll(".techButton").forEach((button, index) => {
     if (index != columnIndex) {
       button.style.boxShadow = "none";
     } else {
@@ -26,7 +26,7 @@ function showIcons(columnIndex) {
   });
   const targetRow = rows[columnIndex];
   if (targetRow) {
-    targetRow.style.display = "table-row";
+    targetRow.style.display = "flex";
   }
 }
 

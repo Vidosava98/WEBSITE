@@ -43,7 +43,6 @@ footer {
   margin: 0;
   padding: 0;
 }
-
 #content-2 {
   font-size: 40px;
 }
@@ -69,23 +68,48 @@ footer {
   box-shadow: 0 0 15px var(--bcg);
 }
 #techId {
-  margin: 15% 0% 15% 0%;
-  padding-left: 15%;
+  margin: 15rem 0 15rem 0;
+  padding-left: 15rem;
 }
-#tableId {
+#techFieldsRow {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 1rem 1rem 1rem 5rem;
+}
+.techButton {
+  background-color: var(--primary);
   color: var(--bcg);
+  font-family: "MyFont";
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  border: none;
 }
-#tableId th {
-  padding: 40px 0px 0px 15%;
+.techFieldsRow {
+  display: flex;
+  flex-direction: row;
 }
-#tableId td {
-  padding: 30px 15px 0px 10%;
+.techFieldsRow div img {
+  margin: 2rem 3rem 0 2rem;
 }
-#tableId td {
+.techButtonsId {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1rem 0 0 6rem;
+}
+.columnPhotoName {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
-#tableId tbody {
-  margin-top: 40px;
+.columnPhotoName img {
+  padding: 0rem;
+}
+.columnPhotoName p {
+  padding: 0rem;
+  margin: 0rem;
+  font-size: 1.5rem;
 }
 .tab {
   background-color: var(--bcg);
@@ -96,14 +120,6 @@ footer {
   text-decoration: none;
   margin-right: 1.2rem;
   padding: 1.2rem;
-}
-.tableTh {
-  background-color: var(--primary);
-  color: var(--bcg);
-  font-family: "MyFont";
-  font-weight: bold;
-  font-size: 20px;
-  border: none;
 }
 .centerText {
   padding: 10% 0vh 0vh 15%;
@@ -116,10 +132,6 @@ footer {
 .icon2 {
   height: 50px;
   width: 50px;
-}
-.icon3 {
-  height: 80px;
-  width: 80px;
 }
 .linkContent {
   display: flex;
@@ -137,11 +149,11 @@ footer {
   background-color: var(--primary);
   color: var(--bcg);
   transform: scale(1);
-  box-shadow: 0 3px 0px var(--bcg);
+  box-shadow: 0 3px 0 var(--bcg);
 }
-.tableTh:hover {
+.techButton:hover {
   background-color: var(--primary);
   color: var(--bcg);
   transform: scale(1);
-  box-shadow: 0 2px 0px var(--bcg);
+  box-shadow: 0 2px 0 var(--bcg);
 }
