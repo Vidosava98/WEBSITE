@@ -54,12 +54,42 @@ header {
   box-shadow: 0 0 1rem var(--bcg);
 }
 #techId {
-  margin: 10rem 0 4rem 0;
+  margin: 10em 0 4rem 0;
   padding-left: 15rem;
 }
 #projectsId {
-  margin: 10rem 0 1rem 0;
+  margin: 10em 0 1em 0;
   padding-left: 15rem;
+}
+#projectsId section {
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  border-radius: 1rem;
+  box-shadow: 0 30px 30px -25px var(--bcg);
+  max-width: 300px;
+  background-color: #0c3934;
+  color: var(--primary);
+  margin: 1rem;
+  padding: 1em;
+}
+.cardLeft {
+  margin-left: 15rem;
+}
+.tag {
+  display: inline-block;
+  background-color: var(--primary);
+  color: var(--bcg);
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0.5em 0.75em;
+  line-height: 1;
+  border-radius: 6px;
+}
+.info {
+  margin-top: 1rem;
+  font-size: 1rem;
 }
 .techButton {
   background-color: var(--primary);
