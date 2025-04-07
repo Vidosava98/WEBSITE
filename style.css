@@ -15,7 +15,6 @@ body {
   font-family: "MyFont";
   background-color: var(--primary);
   color: var(--bcg);
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -26,10 +25,10 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 2%;
+  margin-bottom: 2rem;
   align-items: center;
 }
-#idTab {
+header {
   background-color: var(--bcg);
   color: #ffffff;
   display: flex;
@@ -38,45 +37,29 @@ footer {
   position: sticky;
   top: 0;
   z-index: 100000000;
-  width: 100%;
   height: 4rem;
   box-shadow: 0 0 5px black;
   margin: 0;
   padding: 0;
 }
 #content-2 {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
-#idTextFirst {
-  font-size: 40px;
-  font-style: bold;
-}
-#idTextSecond {
-  font-size: 30px;
-  margin-top: -1%;
-}
-#idTextThird {
-  font-size: 30px;
-  padding-left: 7vh;
-}
-#pictureId {
-  width: 180px;
-  height: 180px;
+#myPictureId {
+  width: 11.2rem;
+  height: 11.2rem;
   border-radius: 50%;
-  margin-left: 7%;
   border: 2px solid var(--bcg);
   object-fit: cover;
-  box-shadow: 0 0 15px var(--bcg);
+  box-shadow: 0 0 1rem var(--bcg);
 }
 #techId {
-  margin: 15rem 0 15rem 0;
+  margin: 10rem 0 4rem 0;
   padding-left: 15rem;
 }
-#techFieldsRow {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  margin: 1rem 1rem 1rem 5rem;
+#projectsId {
+  margin: 10rem 0 1rem 0;
+  padding-left: 15rem;
 }
 .techButton {
   background-color: var(--primary);
@@ -106,11 +89,11 @@ footer {
   text-align: center;
 }
 .columnPhotoName img {
-  padding: 0rem;
+  padding: 0;
 }
 .columnPhotoName p {
-  padding: 0rem;
-  margin: 0rem;
+  padding: 0;
+  margin: 0;
   font-size: 1.5rem;
 }
 .tab {
@@ -124,21 +107,21 @@ footer {
   padding: 1.2rem;
 }
 .centerText {
-  padding: 10% 0vh 0vh 15%;
-  font-size: 30px;
+  padding: 10rem 0 0 15rem;
+  font-size: 1.9rem;
 }
 .icon {
-  height: 45px;
-  width: 45px;
+  height: 2.81rem;
+  width: 2.81rem;
+  margin-right: 1rem;
 }
 .icon2 {
-  height: 50px;
-  width: 50px;
+  height: 3.1rem;
+  width: 3.1rem;
 }
 .linkContent {
   display: flex;
   align-items: center;
-  margin-right: 2%;
 }
 .columnItems {
   display: flex;
@@ -149,7 +132,11 @@ footer {
   flex-direction: row;
 }
 .fontTitle {
-  font-size: 30px;
+  font-size: 1.9rem;
+}
+.fontBiggerTitle {
+  font-size: 2.5rem;
+  font-style: bold;
 }
 .tab:hover {
   background-color: var(--primary);
