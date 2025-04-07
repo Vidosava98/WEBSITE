@@ -25,7 +25,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin: 4rem 0 0 2rem;
   align-items: center;
 }
 header {
@@ -55,15 +55,16 @@ header {
 }
 #techId {
   margin: 10em 0 4rem 0;
-  padding-left: 15rem;
+  padding: 4rem 0 0 15rem;
 }
 #projectsId {
   margin: 10em 0 1em 0;
-  padding-left: 15rem;
+  padding: 4rem 0 0 15rem;
 }
 #projectsId section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .card {
   border-radius: 1rem;
@@ -73,9 +74,7 @@ header {
   color: var(--primary);
   margin: 1rem;
   padding: 1em;
-}
-.cardLeft {
-  margin-left: 15rem;
+  min-height: 20rem;
 }
 .tag {
   display: inline-block;
@@ -86,10 +85,12 @@ header {
   padding: 0.5em 0.75em;
   line-height: 1;
   border-radius: 6px;
+  margin-top: 1em;
 }
 .info {
   margin-top: 1rem;
   font-size: 1rem;
+  text-align: left;
 }
 .techButton {
   background-color: var(--primary);
@@ -103,6 +104,8 @@ header {
 .techFieldsRow {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 50rem;
 }
 .techFieldsRow div img {
   margin: 2rem 3rem 0 3rem;
