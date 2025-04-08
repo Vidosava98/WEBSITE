@@ -56,11 +56,11 @@ header {
 }
 #techId {
   margin: 10em 0 4rem 0;
-  padding: 4rem 0 0 10rem;
+  padding: 4rem 0 0 10%;
 }
 #projectsId {
   margin: 10em 0 1em 0;
-  padding: 4rem 0 0 10rem;
+  padding: 4rem 0 0 10%;
 }
 #projectsId section {
   display: flex;
@@ -141,7 +141,7 @@ header {
   padding: 1.2rem;
 }
 .centerText {
-  padding: 10rem 0 0 10rem;
+  padding: 10% 0 0 10%;
   font-size: 1.9rem;
 }
 .icon {
