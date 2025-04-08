@@ -25,19 +25,20 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 4rem 0 0 2rem;
+  margin: 15rem 0 0 2rem;
   align-items: center;
 }
 header {
   background-color: var(--bcg);
   color: #ffffff;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 100000000;
-  height: 4rem;
+  min-height: 4rem;
   box-shadow: 0 0 5px black;
   margin: 0;
   padding: 0;
@@ -55,11 +56,11 @@ header {
 }
 #techId {
   margin: 10em 0 4rem 0;
-  padding: 4rem 0 0 15rem;
+  padding: 4rem 0 0 10rem;
 }
 #projectsId {
   margin: 10em 0 1em 0;
-  padding: 4rem 0 0 15rem;
+  padding: 4rem 0 0 10rem;
 }
 #projectsId section {
   display: flex;
@@ -140,7 +141,7 @@ header {
   padding: 1.2rem;
 }
 .centerText {
-  padding: 10rem 0 0 15rem;
+  padding: 10rem 0 0 10rem;
   font-size: 1.9rem;
 }
 .icon {
@@ -166,6 +167,7 @@ header {
 }
 .fontTitle {
   font-size: 1.9rem;
+  font-weight: 500;
 }
 .fontBiggerTitle {
   font-size: 2.5rem;
