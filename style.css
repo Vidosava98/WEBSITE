@@ -56,11 +56,11 @@ header {
 }
 #techId {
   margin: 10em 0 4rem 0;
-  padding: 4rem 0 0 10%;
+  padding: 3rem 0 0 10%;
 }
 #projectsId {
   margin: 10em 0 1em 0;
-  padding: 4rem 0 0 10%;
+  padding: 3rem 0 0 10%;
 }
 #projectsId section {
   display: flex;
@@ -74,7 +74,7 @@ header {
   background-color: #0c3934;
   color: var(--primary);
   margin: 1rem;
-  padding: 1em;
+  padding: 1.8em;
   min-height: 20rem;
 }
 .tag {
