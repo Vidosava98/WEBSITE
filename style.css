@@ -76,6 +76,7 @@ header {
   margin: 1rem;
   padding: 1.8em;
   min-height: 20rem;
+  box-sizing: border-box;
 }
 .tag {
   display: inline-block;
