@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio" />
+    <meta name="author" content="Vidosava Arsic" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link
@@ -22,10 +26,10 @@
     <div id="content-1" class="content-tab">
       <div id="aboutMeId" class="columnItems">
         <div class="centerText">
-          <img id="myPictureId" src="Resource/Images/ja.png" alt="My Photo" />
-          <p class="fontBiggerTitle">Hey there! I'm Vidosava Arsić.</p>
-          <p class="fontTitle">I am a full-stack web developer.</p>
-        </div>
+          <img id="myPictureId" src="Resource/Images/vida.jpg" alt="My Photo" />
+          <p class="fontBiggerTitle">Hey there, I'm Vida!</p>
+          <p class="fontTitle">I'm self-driven full stack developer with strong database knowledge and a fast-learning mindset — ready to grow with modern tech stacks.</p>
+          <a href="#projectsId" class="cta">View my work</a>
       </div>
       <div id="techId">
         <p class="fontTitle">Technologies</p>
@@ -35,13 +39,14 @@
             <button class="techButton">BackEnd</button>
             <button class="techButton">FrontEnd</button>
             <button class="techButton">Databases</button>
+            <button class="techButton">Other</button>
           </div>
           <div class="techFieldsRow">
             <div class="columnPhotoName">
               <img
                 src="Resource/Images/Icons/Table/csharp.svg"
                 alt="C#"
-                class="icon2"
+                class="icon"
               />
               <p>C#</p>
             </div>
@@ -49,7 +54,7 @@
               <img
                 src="Resource/Images/Icons/Table/C.svg"
                 alt="C"
-                class="icon2"
+                class="icon"
               />
               <p>C</p>
             </div>
@@ -57,7 +62,7 @@
               <img
                 src="Resource/Images/Icons/Table/java.svg"
                 alt="java"
-                class="icon2"
+                class="icon"
               />
               <p>Java</p>
             </div>
@@ -65,7 +70,7 @@
               <img
                 src="Resource/Images/Icons/Table/javascript.svg"
                 alt="javascript"
-                class="icon2"
+                class="icon"
               />
               <p>JavaScript</p>
             </div>
@@ -73,7 +78,7 @@
               <img
                 src="Resource/Images/Icons/Table/python.svg"
                 alt="python"
-                class="icon2"
+                class="icon"
               />
               <p>Python</p>
             </div>
@@ -135,23 +140,167 @@
               <img
                 src="Resource/Images/Icons/Table/mongodb.svg"
                 alt="mongodb"
-                class="icon2"
+                class="icon"
               />
               <p>MongoDB</p>
             </div>
             <div class="columnPhotoName">
               <img
-                src="Resource/Images/Icons/Table/mysql.svg"
-                alt="mysql"
+                src="Resource/Images/Icons/Table/tidb.svg"
+                alt="tidb"
                 class="icon"
               />
-              <p>MySQL</p>
+              <p>TiDB</p>
+            </div>
+            <div class="columnPhotoName">
+              <img
+                src="Resource/Images/Icons/Table/cassandra.svg"
+                alt="cassandra"
+                class="icon"
+              />
+              <p>Cassandra</p>
+            </div>
+            <div class="columnPhotoName">
+              <img
+                src="Resource/Images/Icons/Table/neo4j.svg"
+                alt="neo4j"
+                class="icon"
+              />
+              <p>Neo4j</p>
+            </div>
+          </div>
+          <div class="techFieldsRow">
+            <div class="columnPhotoName">
+              <img
+                src="Resource/Images/Icons/Table/docker.svg"
+                alt="docker"
+                class="icon"
+              />
+              <p>Docker</p>
+            </div>
+            <div class="columnPhotoName">
+              <img
+                src="Resource/Images/Icons/Table/swagger.svg"
+                alt="swagger"
+                class="icon"
+              />
+              <p>Swagger</p>
+            </div>
+            <div class="columnPhotoName">
+              <img
+                src="Resource/Images/Icons/Table/github.svg"
+                alt="github"
+                class="icon"
+              />
+              <p>GitHub</p>
+            </div>
+            <div class="columnPhotoName">
+              <img
+                src="Resource/Images/Icons/Table/bitbucket.svg"
+                alt="bitbucket"
+                class="icon"
+              />
+              <p>Bitbucket</p>
+            </div>
+            <div class="columnPhotoName">
+              <img
+                src="Resource/Images/Icons/Table/mosquitto.svg"
+                alt="mosquitto"
+                class="icon"
+              />
+              <p>Mosquitto</p>
+            </div>
+            <div class="columnPhotoName">
+              <img
+                src="Resource/Images/Icons/Table/Kafka.svg"
+                alt="kafka"
+                class="icon"
+              />
+              <p>Kafka</p>
+            </div>
+            <div class="columnPhotoName">
+              <img
+                src="Resource/Images/Icons/Table/flink.svg"
+                alt="Flink"
+                class="icon"
+              />
+              <p>Flink</p>
+            </div>
+            <div class="columnPhotoName">
+              <img
+                src="Resource/Images/Icons/Table/figma.svg"
+                alt="Figma"
+                class="icon"
+              />
+              <p>Figma</p>
             </div>
           </div>
         </section>
       </div>
       <div id="projectsId">
         <p class="fontTitle">Projects</p>
+        <section>
+          <article class="card">
+            <h2 class="cardTitle">StartChess</h2>
+            <p class="info">
+              Web application which represents multiplayer game.
+            </p>
+            <div class="tagContainer">
+              <span class="tag">Node.js</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">MongoDB</span>
+            </div>
+          </article>
+          <article class="card">
+            <h2 class="cardTitle">Weather Forecast</h2>
+            <p class="info">
+              Microservice web application that simulates data reading from
+              weather sensors. Processes and analyzes data, performs actions
+              based on the data. Application was made for demonstrating usage of
+              Docker and Swagger.
+            </p>
+            <div class="tagContainer">
+              <span class="tag">.Net Core</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Swagger</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+            </div>
+          </article>
+          <article class="card">
+            <h2 class="cardTitle">Home Party</h2>
+            <p class="info">
+              Web application for users who want to organize a party and to see
+              the party of other users.
+            </p>
+            <div class="tagContainer">
+              <span class="tag">Node.js</span>
+              <span class="tag">Express.js</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">MongoDB</span>
+            </div>
+          </article>
+          <article class="card">
+            <h2 class="cardTitle">Graduation topic</h2>
+            <p class="info">
+              Technologies for implementation of a real-time Data Warehouse.
+            </p>
+            <div class="tagContainer">
+              <span class="tag">.Net Core</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">TiDB</span>
+              <span class="tag">Docker</span>
+            </div>
+          </article>
+        </section>
       </div>
     </div>
     <div id="content-2" class="content-tab"></div>
