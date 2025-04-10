@@ -1,16 +1,20 @@
 html {
   scroll-behavior: smooth;
 }
+
 @font-face {
   font-family: "MyFont";
   src: url("Resource/Font/Roboto-VariableFont_wdth,wght.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+
 :root {
   --primary: #f8ebee;
-  --bcg: #0c3934;
+  --bcg: #0c524a;
+  --bcg-shadow: #0c524abf;
 }
+
 body {
   font-family: "MyFont";
   background-color: var(--primary);
@@ -20,14 +24,15 @@ body {
   margin: 0;
   padding: 0;
 }
+
 footer {
   margin-top: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 15rem 0 0 2rem;
   align-items: center;
 }
+
 header {
   background-color: var(--bcg);
   color: #ffffff;
@@ -38,46 +43,64 @@ header {
   position: sticky;
   top: 0;
   z-index: 100000000;
-  min-height: 4rem;
-  box-shadow: 0 0 5px black;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
   margin: 0;
   padding: 0;
 }
+
 #content-2 {
   font-size: 2.5rem;
 }
+
 #myPictureId {
-  width: 11.2rem;
-  height: 11.2rem;
+  width: 18rem;
+  height: 18rem;
   border-radius: 50%;
   border: 2px solid var(--bcg);
   object-fit: cover;
-  box-shadow: 0 0 1rem var(--bcg);
 }
+
 #techId {
-  margin: 10em 0 4rem 0;
-  padding: 3rem 0 0 10%;
+  margin: 0 0 10rem 8rem;
 }
+
 #projectsId {
-  margin: 10em 0 1em 0;
-  padding: 3rem 0 0 10%;
+  margin: 0 0 10rem 8rem;
 }
+
 #projectsId section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 1em;
 }
+
 .card {
   border-radius: 1rem;
-  box-shadow: 0 30px 30px -25px var(--bcg);
-  max-width: 300px;
+  box-shadow: 0 2rem 2rem -2rem var(--bcg-shadow);
+  max-width: 19rem;
   background-color: #0c3934;
   color: var(--primary);
-  margin: 1rem;
-  padding: 1.8em;
-  min-height: 20rem;
-  box-sizing: border-box;
+  padding: 2em 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
 }
+
+.card p {
+  margin: 0;
+}
+
+.cardTitle {
+  margin: 0;
+}
+
+.tagContainer {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
 .tag {
   display: inline-block;
   background-color: var(--primary);
@@ -87,13 +110,14 @@ header {
   padding: 0.5em 0.75em;
   line-height: 1;
   border-radius: 6px;
-  margin-top: 1em;
 }
+
 .info {
   margin-top: 1rem;
   font-size: 1rem;
   text-align: left;
 }
+
 .techButton {
   background-color: var(--primary);
   color: var(--bcg);
@@ -103,34 +127,41 @@ header {
   border: none;
   cursor: pointer;
 }
+
 .techFieldsRow {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   max-width: 50rem;
 }
+
 .techFieldsRow div img {
   margin: 2rem 3rem 0 3rem;
 }
+
 .techButtonsId {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   padding: 1rem 0 0 6rem;
 }
+
 .columnPhotoName {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
+
 .columnPhotoName img {
   padding: 0;
 }
+
 .columnPhotoName p {
   padding: 0;
   margin: 0;
   font-size: 1.5rem;
 }
+
 .tab {
   background-color: var(--bcg);
   color: var(--primary);
@@ -141,44 +172,83 @@ header {
   margin-right: 1.2rem;
   padding: 1.2rem;
 }
-.centerText {
-  padding: 10% 0 0 10%;
-  font-size: 1.9rem;
+
+#aboutMeId {
+  position: relative;
 }
+
+.centerText {
+  font-size: 2;
+  height: calc(100vh - 3.75rem);
+  display: flex;
+  justify-content: center;
+  padding: 0 8rem;
+  display: flex;
+  flex-direction: column;
+}
+
 .icon {
   height: 2.81rem;
   width: 2.81rem;
   margin-right: 1rem;
 }
+
 .linkContent {
   display: flex;
   align-items: center;
 }
+
 .columnItems {
   display: flex;
   flex-direction: column;
 }
+
 .rowItems {
   display: flex;
   flex-direction: row;
 }
+
 .fontTitle {
   font-size: 1.9rem;
   font-weight: 500;
+  max-width: 60%;
+  margin: 0;
+  margin-bottom: 3rem;
 }
+
 .fontBiggerTitle {
   font-size: 2.5rem;
   font-style: bold;
+  margin-bottom: 1rem;
 }
+
 .tab:hover {
   background-color: var(--primary);
   color: var(--bcg);
-  transform: scale(1);
-  box-shadow: 0 3px 0 var(--primary);
 }
+
 .techButton:hover {
   background-color: var(--primary);
   color: var(--bcg);
   transform: scale(1);
   box-shadow: 0 2px 0 var(--bcg);
+}
+
+.cta {
+  width: fit-content;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--bcg);
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: 1px solid var(--bcg)
+}
+
+.cta:hover {
+  background-color: var(--primary);
+  color: var(--bcg);
+  transform: translateY(-2px);
 }
