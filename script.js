@@ -1,52 +1,28 @@
-document.getElementById("tab-1").addEventListener("click", function () {
-  showContent(1);
-});
-
-document.getElementById("tab-5").addEventListener("click", function () {
-  showContent(5);
-});
 document.querySelectorAll(".techButton").forEach((button, index) => {
   button.addEventListener("click", function () {
     showIcons(index);
   });
 });
+
+let activeButton = document.querySelector(".techButton.active");
+let visibleRow = document.querySelector("#techId .techFieldsRow:not(.hidden)");
+
 function showIcons(columnIndex) {
+  const buttons = document.querySelectorAll(".techButton");
   const rows = document.querySelectorAll("#techId .techFieldsRow");
 
-  rows.forEach((row) => {
-    row.style.display = "none";
-  });
+  // Deactivate previously active button and row
+  activeButton?.classList.remove("active");
+  visibleRow?.classList.add("hidden");
 
-  document.querySelectorAll(".techButton").forEach((button, index) => {
-    if (index != columnIndex) {
-      button.style.boxShadow = "none";
-      button.style.color = "#15635a";
-    } else {
-      button.style.boxShadow = "0 2px 0  #0C3934";
-      button.style.color = "#0C3934";
-    }
-  });
-  const targetRow = rows[columnIndex];
-  if (targetRow) {
-    targetRow.style.display = "flex";
-  }
+  // Activate new button and row
+  const newButton = buttons[columnIndex];
+  const newRow = rows[columnIndex];
+
+  newButton?.classList.add("active");
+  newRow?.classList.remove("hidden");
+
+  // Update active references
+  activeButton = newButton;
+  visibleRow = newRow;
 }
-
-function showContent(tabNumber) {
-  const allPages = document.querySelectorAll(".content-tab");
-  allPages.forEach(function (page) {
-    page.style.display = "none";
-  });
-
-  const activeTab = document.getElementById("content-" + tabNumber);
-  activeTab.style.display = "block";
-
-  const allButtons = document.querySelectorAll(".tab");
-  allButtons.forEach(function (button) {
-    button.classList.remove("active");
-  });
-  document.getElementById("tab-" + tabNumber).classList.add("active");
-}
-
-showContent(1);
-showIcons(0);

@@ -122,21 +122,30 @@ header {
   background-color: var(--primary);
   color: var(--bcg);
   font-family: "MyFont";
-  font-size: 1.5rem;
-  padding: 1.5rem;
+  font-size: 1.5em;
+  padding: 0.25em 0.5em;
   border: none;
+  border-bottom: 2px solid transparent;
   cursor: pointer;
+}
+
+.active {
+  border-bottom-color: var(--bcg);
 }
 
 .techFieldsRow {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 50rem;
+  gap: 1em;
+  opacity: 1;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  position: relative;
 }
 
-.techFieldsRow div img {
-  margin: 2rem 3rem 0 3rem;
+.hidden {
+  opacity: 0;
+  position: fixed;
 }
 
 .techButtonsId {
@@ -150,16 +159,23 @@ header {
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
+  gap: 0.5em;
+  border: 1px solid var(--bcg);
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
 }
 
 .columnPhotoName img {
   padding: 0;
+  margin: 0;
 }
 
 .columnPhotoName p {
   padding: 0;
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .tab {
@@ -201,6 +217,7 @@ header {
 .columnItems {
   display: flex;
   flex-direction: column;
+  gap: 1em;
 }
 
 .rowItems {
@@ -231,7 +248,7 @@ header {
   background-color: var(--primary);
   color: var(--bcg);
   transform: scale(1);
-  box-shadow: 0 2px 0 var(--bcg);
+  border-bottom: 2px solid var(--bcg);
 }
 
 .cta {
@@ -253,20 +270,43 @@ header {
   transform: translateY(-2px);
 }
 
-@media (max-width: 1000px) {
-  #techId {
-    margin: 20rem 0 5rem 3.5rem;
+@media (max-width: 550px) {
+  .tab {
+    padding: 0.75em 1em;
   }
-}
 
-@media (max-width: 1000px) {
-  #projectsId {
-    margin: 0 0 5rem 3rem;
+  #content-1 {
+    padding: 2em 1.5em 0 1.5em;
   }
-}
 
-@media (max-width: 1000px) {
   #aboutMeId {
-    margin: 18rem 1rem 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+  }
+
+  .centerText {
+    height: auto;
+    padding: 0;
+    align-items: center;
+  }
+
+  .fontTitle {
+    max-width: 100%;
+    margin-bottom: 1em;
+  }
+
+  #techId {
+    margin: 0;
+  }
+
+  .techButtonsId {
+    display: flex;
+    gap: 1em;
+  }
+
+  #projectsId {
+    margin: 0;
+    margin-bottom: 3em;
   }
 }
