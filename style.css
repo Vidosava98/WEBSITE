@@ -223,6 +223,7 @@ header {
 .rowItems {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .fontTitle {
