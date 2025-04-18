@@ -82,7 +82,7 @@ header {
   max-width: 19rem;
   background-color: #0c3934;
   color: var(--primary);
-  padding: 1em 3em;
+  padding: 1em 3em 2em 3em;
   display: flex;
   flex-direction: column;
   gap: 2em;
@@ -224,7 +224,6 @@ header {
 .rowItems {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 
 .fontTitle {
