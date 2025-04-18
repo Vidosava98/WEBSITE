@@ -76,12 +76,13 @@ header {
 }
 
 .card {
+  position: relative;
   border-radius: 1rem;
   box-shadow: 0 2rem 2rem -2rem var(--bcg-shadow);
   max-width: 19rem;
   background-color: #0c3934;
   color: var(--primary);
-  padding: 2em 3em;
+  padding: 1em 3em;
   display: flex;
   flex-direction: column;
   gap: 2em;
@@ -270,6 +271,18 @@ header {
   color: var(--bcg);
   transform: translateY(-2px);
 }
+.gitIcon {
+  position: absolute;
+  top: 0.8em;
+  right: 0.8em;
+  height: 2.81rem;
+  width: 2.81rem;
+}
+.gitIcon:hover {
+  transform: scale(1.15);
+  opacity: 1;
+  cursor: pointer;
+}
 
 @media (max-width: 550px) {
   .tab {
@@ -305,7 +318,6 @@ header {
     display: flex;
     gap: 1em;
   }
-
   #projectsId {
     margin: 0;
     margin-bottom: 3em;
